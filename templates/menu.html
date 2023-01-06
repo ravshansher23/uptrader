@@ -1,0 +1,19 @@
+<nav class="menu">
+<ul class="nav-elem">
+    {% for item in menu_obj %}
+    {% if item.parent is None %}
+        <li><a href="{% url 'mainapp:news' slug=item.slug %}">{{ item.name }} 
+            {% for obj in menu_obj %}
+            {% if obj.parent == item.name %}
+                <ul class="nav-elem">
+                    <li><a href="{% url 'mainapp:news' slug=obj.slug %}">{{ obj.title }}</a>
+                    </li>
+            
+                </ul>
+                {% endif %}
+            {% endfor %}
+        </a></li>
+    {% endif %}    
+    {% endfor %}
+</ul>
+</nav>

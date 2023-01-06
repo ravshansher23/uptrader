@@ -1,0 +1,45 @@
+{% load static %}
+{% load mytags %}
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  <title>Welcome to Braniac!</title>
+</head>
+
+<body>
+  <!-- /Menu  -->
+  {% show_top_menu %}
+    
+
+    <div class="content">
+    {% block content %}
+    {% endblock content %}
+    </div>
+  <!-- /Footer -->
+    
+  <footer>
+    <div class="footer">  
+    <div class="row">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia velit sequi ut maxime blanditiis dolore et beatae magnam odit? Ab quos voluptates delectus corrupti porro aspernatur necessitatibus molestiae error at!
+    </div>
+    </div>
+    </footer>
+
+
+
+
+  <!-- JavaScript section -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+
+</body>
+
+</html>
