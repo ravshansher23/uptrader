@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block menu %}
+    <ul>
+        {% for item in menu_obj %}
+            <li><a href="{% url 'mainapp:news' pk=item.pk %}">{{ item.title }} 
+                
+                    <ul>
+                        {% for items in in_menu %}
+                        {% if items.menu_id == item.pk %}
+                        <li><a href="{% url 'mainapp:news_paginator' pk=items.pk %}">{{ items.title }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                
+            </a></li>
+        {% endfor %}
+    </ul>
+{% endblock menu %}
+
+{% block content %}
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, ratione debitis, sequi illo qui quidem at error obcaecati amet, commodi in inventore quaerat nobis deserunt repellendus distinctio quas tempora corporis!</div>
+{% endblock content %}
