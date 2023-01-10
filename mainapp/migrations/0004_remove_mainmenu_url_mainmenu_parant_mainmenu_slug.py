@@ -6,22 +6,22 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('mainapp', '0003_mainmenu'),
+        ("mainapp", "0003_mainmenu"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='mainmenu',
-            name='url',
+            model_name="mainmenu",
+            name="url",
         ),
         migrations.AddField(
-            model_name='mainmenu',
-            name='parant',
-            field=models.CharField(max_length=100, null=True, verbose_name='name'),
+            model_name="mainmenu",
+            name="parant",
+            field=models.CharField(max_length=100, null=True, verbose_name="name"),
         ),
         migrations.AddField(
-            model_name='mainmenu',
-            name='slug',
-            field=models.CharField(default='', max_length=255, verbose_name='Slug'),
+            model_name="mainmenu",
+            name="slug",
+            field=models.CharField(default="", max_length=255, verbose_name="Slug"),
         ),
     ]

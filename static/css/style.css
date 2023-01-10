@@ -4,6 +4,7 @@ body {
     font-size: 14px;
     line-height: 1.6;
     color: rgb(0, 0, 0);
+    background-color: rgb(197, 199, 199);
 }
 
 *,
@@ -27,20 +28,23 @@ a {
     color: rgb(18, 19, 19) !important;
 }
 
-.hidden {
-    display: none;
+ul {
+    list-style-type: disclosure-closed;
+    
+
 }
+
 
 /* Navigation  */
 
 nav {
-    background-color: rgb(223, 221, 221);
+    background-color: rgb(197, 199, 199);
 
 }
 
 .nav-elem {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -49,17 +53,23 @@ nav {
     padding: 0 0 0 2%;
 }
 
+
+
 .menu {
-    background-color: gray;
-    height: auto;
+    padding: 5px 15px 15px 0;
+    background-color: rgb(197, 199, 199);
+    width: fit-content;
+
 }
 
+.entered {
+    display: none;
+}
 
 /* Container */
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    height: max-content;
+    width: 100px;
 }
 
 .content{

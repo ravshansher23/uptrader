@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('mainapp', '0007_remove_mainmenu_parant_mainmenu_parent'),
+        ("mainapp", "0007_remove_mainmenu_parant_mainmenu_parent"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='mainmenu',
-            name='parent',
-            field=models.CharField(default=None, max_length=100, null=True, verbose_name='parent'),
+            model_name="mainmenu",
+            name="parent",
+            field=models.CharField(default=None, max_length=100, null=True, verbose_name="parent"),
         ),
     ]

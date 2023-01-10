@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('mainapp', '0005_alter_mainmenu_slug'),
+        ("mainapp", "0005_alter_mainmenu_slug"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='mainmenu',
-            name='slug',
+            model_name="mainmenu",
+            name="slug",
             field=models.SlugField(unique=True),
         ),
     ]

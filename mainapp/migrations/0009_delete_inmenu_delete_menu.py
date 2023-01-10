@@ -6,14 +6,14 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('mainapp', '0008_alter_mainmenu_parent'),
+        ("mainapp", "0008_alter_mainmenu_parent"),
     ]
 
     operations = [
         migrations.DeleteModel(
-            name='InMenu',
+            name="InMenu",
         ),
         migrations.DeleteModel(
-            name='Menu',
+            name="Menu",
         ),
     ]
